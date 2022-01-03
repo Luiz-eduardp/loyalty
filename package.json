@@ -1,8 +1,8 @@
 {
-  "name": "fidelity",
+  "name": "loyalty",
   "version": "0.0.1",
   "description": "...",
-  "productName": "fidelity",
+  "productName": "loyalty",
   "author": "Luiz Eduardo <luizzeduardp@gmail.com>",
   "private": true,
   "scripts": {
