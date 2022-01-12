@@ -19,12 +19,12 @@
       <tbody>
         <tr v-for="(item, i) in filteredItems" :key="i">
           <td data-label="#">&nbsp; {{ item.rank }}</td>
-          <td data-label="Título:">&nbsp;{{ item.nome }}</td>
-          <td data-label="Autor:">&nbsp;{{ item.cpf }}</td>
-          <td data-label="Data de Publicação:">&nbsp;{{ item.fidelidade }} &nbsp; 
+          <td data-label="Nome:">&nbsp;{{ item.nome }}</td>
+          <td data-label="CPF:">&nbsp;{{ item.cpf }}</td>
+          <td data-label="Fidelidade:">&nbsp;{{ item.fidelidade }} &nbsp;
 <q-banner inline-actions class="text-white bg-green" v-if="item.fidelidade >= 10">
     {{item.nome}} atingiu {{item.fidelidade}} pontos de fidelidade!!!
-     
+
     </q-banner>
 
           </td>
@@ -40,12 +40,12 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "PageIndex",
-  
+
   data() {
     return {
       search: "",
       items: [
-       
+
         {
           rank: "1",
           nome: "luiz eduardo",
@@ -67,7 +67,7 @@ export default defineComponent({
       ],
     };
   },
- 
+
  mounted() {
     if (localStorage.getItem('items')) {
       try {
